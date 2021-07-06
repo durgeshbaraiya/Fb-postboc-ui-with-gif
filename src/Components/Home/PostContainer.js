@@ -1,12 +1,10 @@
 import React from 'react';
 import Post from './Post';
 
+
 const PostContainer = () => {
   return (
-    <div className='mt-4 w-full h-full'>
-      <Post />
-      <Post />
-      <Post />
+    <div id='post_container' className='mt-4 w-full h-full'>
     </div>
   );
 };

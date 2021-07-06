@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Post = () => {
+const Post = (props) => {
+  console.log(props.gifurl);
   return (
     <div className='w-full shadow h-auto bg-white my-2 rounded-md'>
       <div className='flex items-center space-x-2 p-3 px-4'>
@@ -13,7 +14,7 @@ const Post = () => {
         </div>
         <div className='flex-grow flex flex-col'>
           <div className='text-gray-500 font-semibold'>
-            <p>Saiful Islam</p>
+            <p>Test</p>
           </div>
           <span className='text-xs text-gray-300'>2d</span>
         </div>
@@ -23,13 +24,11 @@ const Post = () => {
           </button>
         </div>
       </div>
-      <div className='text-gray-500 px-3'>This is caption</div>
+      <div className='text-gray-500 px-3'>{props.cap}</div>
       <div className='w-full h-76 max-h-80'>
-        <img
-          src='https://picsum.photos/1080/1920'
-          alt='postimage'
-          className='w-full h-76 max-h-80'
-        />
+      
+        <iframe alt="postimage" className='w-full h-76 max-h-80' src={props.gifurl} >
+        </iframe>
       </div>
       <div className='w-full flex flex-col space-y-2 p-3 px-4'>
         <div className='flex items-center justify-between px-3 pb-2 mb-2 border-b'>
