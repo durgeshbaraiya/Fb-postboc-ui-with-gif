@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/main.css';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import HomeScreen from './Components/Home/HomeScreen';
 
 
