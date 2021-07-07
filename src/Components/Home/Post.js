@@ -27,7 +27,7 @@ const Post = (props) => {
       <div className='text-gray-500 px-3'>{props.cap}</div>
       <div className='w-full h-76 max-h-80'>
       
-        <iframe alt="postimage" className='w-full h-76 max-h-80' src={props.gifurl} >
+        <iframe alt="postimage" title="gif" className='w-full h-76 max-h-80' src={props.gifurl} >
         </iframe>
       </div>
       <div className='w-full flex flex-col space-y-2 p-3 px-4'>
